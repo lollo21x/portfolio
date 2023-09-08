@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lollo21 homepage</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: 'Thunder-BlackLC';
+        src: url('https://res.cloudinary.com/dk0f2y0hu/raw/upload/v1691684501/Thunder-BlackLC_uyon7n.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        font-family: 'Thunder-BlackLC', sans-serif;
+      }
+
+      .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+      }
+
+      .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .containerLanding {
+        display: none;
+      }
+
+      .containerLanding.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <video id="background-video" autoplay muted loop>
+        <source src="https://res.cloudinary.com/dk42t7kqm/video/upload/v1688905504/Registrazione-schermo-2023-07-09-alle-14.18.18_2_pn9kha.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="containerLanding">
+      <img
+        class="boxPopupUp"
+title="Yes, that's me! 😁"
+        src="https://res.cloudinary.com/dk0f2y0hu/image/upload/v1693390591/profile_pic_lollo21.png"
+      />
+      <h1 class="mainTitle textPopupUp" title="Hi 👋">lollo21 homepage</h1>
+    </div>
+
+    <a
+      href="https://github.com/lollo21x"
+      title="Personal GitHub Account"
+      target="_blank"
+    >
+      <button class="github">GitHub account</button>
+    </a>
+    <br />
+    <a
+      href="https://www.instagram.com/lorenzocingolanii/"
+      title="Personal Instagram Profile"
+      target="_blank"
+    >
+      <button class="instagram">Instagram profile</button>
+    </a>
+    <br />
+    <a
+      href="https://x.com/lollo12x"
+      title="Personal X Profile"
+      target="_blank"
+    >
+      <button class="twitter buttonAnimation">X profile</button>
+    </a>
+    <br />
+    <a
+      href="https://www.threads.net/@lorenzocingolanii"
+      title="Personal Threads Account"
+      target="_blank"
+    >
+      <button class="threads">Threads profile</button>
+    </a>
+    <br />
+    <a
+      href="https://www.behance.net/lollo_21"
+      title="Personal Behance Profile"
+      target="_blank"
+    >
+      <button class="behance buttonAnimation">Behance profile</button>
+    </a>
+    <br />
+    <a
+      href="https://github.com/LolloASD21"
+      title="Github"
+      target="_blank"
+    >
+      <p></p>
+    </a>
+    <br />
+    <a
+      href="https://sites.google.com/view/lamp-news"
+      title="Lamp News Website"
+      target="_blank"
+    >
+      <button class="stuff">Lamp News</button>
+    </a>
+    <br />
+    <a href="https://sites.google.com/view/dandd-lab/h" title="D&D Website" target="_blank">
+      <button class="stuff">D&D LAB</button>
+    </a>
+    <br />
+    <h3 class="credits fadeInDelayed", title="👀">Coded by lollo21</h3>
+    <br />
+    <script>
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (!isMobile) {
+        setTimeout(function() {
+          var videoContainer = document.querySelector('.video-container');
+          var landingContainer = document.querySelector('.containerLanding');
+          videoContainer.style.display = 'none';
+          landingContainer.style.display = 'block';
+        }, 1300);
+      } else {
+        var videoContainer = document.querySelector('.video-container');
+        var landingContainer = document.querySelector('.containerLanding');
+        videoContainer.style.display = 'none';
+        landingContainer.style.display = 'block';
+      }
+    </script>
+  </body>
+  <style>
+@font-face {
+    font-family: 'Getai Grotesk';
+    src: url('https://res.cloudinary.com/dk42t7kqm/raw/upload/v1682087998/Fonts/DTGetaiGroteskDisplay-Black_lvaqdy.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Getai Grotesk', sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes buttonAnimation {
+  33% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.08);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.snowflake {
+  color: rgb(255, 255, 255);
+  opacity: 90%;
+  font-size: 1.6em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top:-10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+}
+
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s,3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  -webkit-animation-delay: 2s, 0s;
+  animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  -webkit-animation-delay: 4s, 2.5s;
+  animation-delay: 4s, 2.5s;
+}
+
+/* CSS PAGINE WEB */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Getai Grotesk", sans-serif;
+  background-color: #EFEFEF;
+}
+
+a {
+  display: inline-block;
+}
+
+.containerLanding img {
+  width: 30vw;
+  border-radius: 50%;
+  position: relative;
+  left: calc(50vw - 15vw);
+  margin: 2em 0 0 0;
+  box-shadow: var(--boxShadow);
+}
+
+.mainTitle {
+  color: black;
+  font-size: 12vw;
+  line-height: 16vw;
+  text-align: center;
+  padding-top: 0.2em;
+  margin: 0 8vw 0.2em 8vw;
+}
+
+.containerSocial,
+.containerRaduno {
+  text-align: center;
+  margin: 0;
+}
+
+.containerSocial a,
+.containerRaduno a {
+  text-align: center;
+  margin: 0 0.4em 0 0.4em;
+}
+
+.containerSocial img {
+  width: 1.4em;
+  transition: 0.3s;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.containerSocial a:hover > img {
+  transform: scale(1.2);
+}
+
+.containerRaduno h1 {
+  font-size: 1.3em;
+}
+
+.containerRaduno h3 {
+  font-size: 0.8em;
+}
+
+.containerRaduno p {
+  font-size: 0.8em;
+  margin: 1em 0 1em 0;
+}
+
+.form h5 {
+  margin: 0 1em 0 1em;
+}
+
+.form {
+  text-align: center;
+  margin: 0;
+}
+
+.form table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form table th {
+  padding-right: 0.7em;
+}
+
+.form table p {
+  text-align: right;
+}
+
+.form table input {
+  display: inline-table;
+}
+
+.form label {
+  display: inline-table;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.form input {
+  line-height: 2em;
+}
+
+.form input[type="submit"] {
+  position: unset;
+  width: 20vw;
+}
+
+.form a {
+  color: black;
+}
+
+form input:placeholder-shown {
+  padding-left: 5px;
+}
+
+button,
+input[type="submit"] {
+  position: relative;
+  left: 5vw;
+  width: 90vw;
+  height: 3.6em;
+  border-radius: 1em;
+  border: none;
+  font-family: "Getai Grotesk";
+  font-size: 1em;
+  cursor: pointer;
+  margin: 1em 0 0 0;
+  background-color: white;
+  border-style: solid;
+  color: black;
+  transition: 0.5s;
+  box-shadow: var(--boxShadow);
+}
+
+input[type="submit"] {
+  border-radius: 4em;
+}
+
+.form button,
+.form input[type="submit"] {
+  width: 90vw;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.locked {
+  filter: brightness(55%);
+  pointer-events: none;
+}
+
+.behance {
+  border-style: solid;
+  border-color: #3c67e6;
+  border-width: 4px;
+}
+
+.instagram {
+  border-style: solid;
+  border-color: #fa7e1e;
+  border-width: 4px;
+}
+
+.github,
+input[type="submit"] {
+  border-style: solid;
+  border-color: #48525c;
+  border-width: 4px;
+}
+
+.threads {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 4px;
+}
+
+/*.link-centered {
+    width:fit-content;
+    margin: auto;
+    cursor:pointer;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.link-centered a {
+    text-decoration:none;
+    color: inherit;
+}*/
+
+.twitter {
+  border-style: solid;
+  border-color: #000;
+  border-width:4px;
+}
+
+.n26 {
+  border-style: solid;
+  border-color: #48ac98;
+  border-width: 4px;
+}
+
+.stuff {
+  color: black;
+  background-color: #3AAAFF;
+  height: 3.0em;
+  font-size: 0.7em;
+  margin: 1.5em 0 0 0;
+}
+
+.credits {
+  color: black;
+  font-size: 9pt;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin: 6vh 8vw 6vh 8vw;
+}
+
+@media screen and (min-width: 360px) {
+  .containerLanding img {
+    width: 6em;
+    left: calc(50vw - 3em);
+  }
+
+  .mainTitle {
+    font-size: 6vh;
+    line-height: normal;
+    line-height: 1.1em;
+  }
+
+  .containerSocial {
+    margin: 0 1em 0 1em;
+  }
+
+  .containerSocial a {
+    margin: 0 0.6em 0 0.6em;
+  }
+
+  .containerSocial img {
+    width: 1.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+
+  .containerRaduno h1 {
+    font-size: 1.6em;
+  }
+
+  .containerRaduno h3 {
+    font-size: 1em;
+  }
+
+  .containerRaduno p {
+    font-size: 0.8em;
+  }
+
+  .form input[type="submit"] {
+    width: 15em;
+  }
+
+  button {
+    left: calc(50vw - 8em);
+    width: 16em;
+    height: 4em;
+    font-size: 0.9em;
+    margin: 1.1em 0 0 0;
+  }
+
+  .stuff {
+    font-size: 0.8em;
+    margin: 1em 0 0 0;
+  }
+
+  .credits {
+    margin: 8vh 8vw 8vh 8vw;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .containerLanding img {
+    width: 8em;
+    left: calc(50vw - 4em);
+  }
+
+  .containerRaduno h1 {
+    font-size: 1em;
+  }
+
+  .containerRaduno p {
+    font-size: 1em;
+  }
+
+  .mainTitle {
+    font-size: 7vh;
+  }
+
+  button {
+    font-size: 1.1em;
+    height: 3.6em;
+    margin: 1em 0 0 0;
+  }
+}
+
+body {
+  font-family: "Getai Grotesk", sans-serif;
+}
+
+::selection {
+  background: #3AAAFF; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #3AAAFF; /* Gecko Browsers */
+}
+
+  </style>
+</html>
