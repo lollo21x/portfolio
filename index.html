@@ -187,7 +187,7 @@
               videoContainer.style.display = 'none';
               showLanding();
             }, 500);
-          }, 1400);
+          }, 2200);
         } else {
           // Mobile: niente video, mostra direttamente
           document.addEventListener('DOMContentLoaded', function() {
@@ -693,6 +693,12 @@ input[type="submit"] {
   .containerLanding img {
     width: 8em;
     left: calc(50vw - 4em);
+  }
+
+  /* Desktop: nascondi le barre di scorrimento e alza leggermente i credits */
+  @media screen and (min-width: 1024px) {
+    html, body { height: 100%; overflow: hidden; }
+    .credits { margin: 4vh 8vw 2vh 8vw; }
   }
 
   .containerRaduno h1 {
